@@ -38,4 +38,4 @@ https://hub.docker.com/r/jetskibaby/generator
 
 # Note
 ### front end might have problems fetching device temperature on time (due to delayed response from generated temperature), this can be simply fixed by increasing timeout
-#### also in some cases deciding whether device is critical or not, All of this can easily be fixed but this was done in a really short period of time 
+#### also in some cases deciding whether device is critical or not, All of this can easily be fixed but this was done in a really short period of time and little bugs may be present
