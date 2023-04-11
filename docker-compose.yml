@@ -41,5 +41,6 @@ services:
   generator:
     image: jetskibaby/generator:latest
     container_name: generator
+    restart: always
     depends_on:
       - thermostat-app
