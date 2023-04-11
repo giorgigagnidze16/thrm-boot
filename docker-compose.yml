@@ -30,13 +30,13 @@ services:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: thermostat
 
-#  front:
-#    image: jetskibaby/thermo-front:latest
-#    container_name: thermo_front
-#    ports:
-#      - "3000:3000"
-#    environment:
-#      - REACT_APP_PROXY_URL=http://localhost:8080/api
+  front:
+    image: jetskibaby/thermo-front:latest
+    container_name: thermo_front
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_PROXY_URL=http://localhost:8080/api
 
   generator:
     image: jetskibaby/generator:latest
