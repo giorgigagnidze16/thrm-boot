@@ -1,0 +1,45 @@
+version: "3.9"
+
+services:
+  thermostat-app:
+    image: jetskibaby/backend:latest
+    container_name: backend
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
+      MYSQL_PORT: 3306
+    depends_on:
+      - mysqldb
+
+  rabbitmq:
+    image: rabbitmq:3.9.11-management-alpine
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  mysqldb:
+    container_name: mysqldb
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: thermostat
+
+#  front:
+#    image: jetskibaby/thermo-front:latest
+#    container_name: thermo_front
+#    ports:
+#      - "3000:3000"
+#    environment:
+#      - REACT_APP_PROXY_URL=http://localhost:8080/api
+
+  generator:
+    image: jetskibaby/generator:latest
+    container_name: generator
+    depends_on:
+      - thermostat-app
