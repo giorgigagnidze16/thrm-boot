@@ -12,7 +12,7 @@ Java 17, Spring Boot, Spring Security, Sprig Data JPA, RabbitMq <br/>
 React.js, TypeScript, Axios, Docker, MySQL, etc. </br>
 
 ## What can be improved
-implement logic for refreshTokens and improve JWT auth
+implement logic for refreshTokens and improve JWT auth </br>
 use Redux for user state management
 
 ## Back end container:
