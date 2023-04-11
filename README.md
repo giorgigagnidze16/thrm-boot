@@ -29,7 +29,7 @@ Container: <br/>
 https://hub.docker.com/r/jetskibaby/thermo-front
 
 ## Temperature Generator repository:
-
+Alternatively, could be implemented with WebSockets, but decided to go with easier RabbitMQ approach <br />
 https://github.com/giorgigagnidze16/temperature-generator
 
 Container: <br/>
