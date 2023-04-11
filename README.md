@@ -16,7 +16,8 @@ React.js, TypeScript, Axios, Docker, MySQL, etc. </br>
 
 ## What can be improved
 implement logic for refreshTokens and improve JWT auth </br>
-use Redux for user state management
+use Redux for user state management </br>
+use NGINX as a reverse proxy 
 
 ## Back end container:
 https://hub.docker.com/r/jetskibaby/backend
