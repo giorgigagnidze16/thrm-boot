@@ -9,7 +9,7 @@ Run docker-compose.yml on your local machine.
 
 ### The  project uses: </br>
 
-Java 17, Spring Boot, Spring Security, Sprig Data JPA, RabbitMq <br/>
+Java 17, Spring Boot, Spring Security, Sprig Data JPA, RabbitMQ <br/>
 React.js, TypeScript, Axios, Docker, MySQL, etc. </br>
 
 ## What can be improved
