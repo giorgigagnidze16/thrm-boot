@@ -1,4 +1,6 @@
 # Thermostat management  service
+P.S this project was created in a very short period of time
+
 ### HOW TO RUN THE PROJECT 
 
 Run docker-compose.yml on your local machine.
